@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+h1 {
+    font-family: 'La Belle Aurore', sans-serif;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'La Belle Aurore', sans-serif;
+    font-size: 2em;
+}

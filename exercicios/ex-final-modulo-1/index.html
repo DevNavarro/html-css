@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Definir a lingua-->
+<head>
+    <meta charset="UTF-8"> <!--texto com presença de caracteres especiais/acentuação-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFinal</title>
+    <link rel="shortcut icon" href="imagens/favicon-html-5.ico" type="image/x-icon"> <!--comando para Favicon-->
+    <link rel="stylesheet" href="style.css"> <!--Linkar o CSS com o código HTML-->
+</head>
+<body>
+    <h1>Titulo Principal</h1> <!--Colocar um titulo indo de h1...h6-->
+    <h2>Texto exemplo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis, totam fugit consequuntur eum alias voluptas? Beatae, soluta sint! Hic explicabo expedita porro ex laborum labore provident fugiat voluptas quas.</p><!--colocar um parágrafo, "lorem" para adicionar um texto aleatório--> <br><!--quebra de linha-->
+    <h2>Símbolos e emojis</h2>
+    <p>Símbolos especiais: 
+        &copy; <!--(& + entidade por nome + ;) exemplo: &pound; = £ -->
+        &reg;
+        &lt; &gt;
+    </p>
+    <p>Emojis: <!--(&#x + exadecimal do emoji + ;) exemplo: &#x1F49B; = 💛 -->
+        &#x1F49A;&#x1F49B;
+    </p>
+    <h2>Imagens</h2>
+    <p>Asuka</p> <!--hospedamento local-->
+    <img src="imagens/asuka.jpg" alt="asuka" width="800"> <!--adicionar imagem, scr=diretório, alt=nome exibido ao dar erro no diretório, width=redefini a largura da imagem e proporciona a altura, porém o tamanho do arquivo permanece inalterado-->
+    <p>Goenji</p> <!--hospedamento online-->
+    <img src="https://i.ytimg.com/vi/jhVOXIMIEv0/maxresdefault.jpg" alt="goenji" width="800"> <!--scr está em um diretório online-->
+    <h2>Formatando Texto com Semântica</h2>
+        <p>Ekko</p>
+        <p><strong>Ekko</strong></p> <!--negrito-->
+        <p><em>Ekko</em></p>         <!--itálico-->
+        <p><mark style="background-color:red;">Ekko</mark></p> <!--grifado--> <!--mudar a cor com o style, quando não alterado ficara o amarelo padrão-->
+        <p><big>Ekko</big></p> <!--texto grande--> <!--tag em desuso, recomendado alterar a fonte-->
+        <p><small>Ekko</small></p> <!--texto pequeno--> <!--usual porém, pode entrar em desuso nos próximos anos, recomendado alterar a fonte-->
+        <p><del>Ekko</del></p> <!--texto riscado (deletado)-->
+        <p><ins>Ekko</ins></p> <!--sublinhado-->
+        <p>Ekko <sup>ekko</sup></p> <!--sobrescrito-->
+        <p>Ekko <sub>ekko</sub></p> <!--texto subscrito-->
+    <h2>Código-fonte</h2>
+    <pre> <!--Será deixada a identação do código-->
+        <code> <!--falar que é um código, fonte: "user agent's (en_US)"-->
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'o número {num} é PAR')
+            else:
+                print(f'o número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+        <p>Como diz o Ekko: <q>O tempo não cura todas as feridas</q></p> <!--"q" citações, adionar as aspas ("")-->
+        <p>Segundo Robert L. Leahy:</p>
+        <blockquote cite="https://www.google.com.br/books/edition/N%C3%A3o_Acredite_em_Tudo_Que_Voc%C3%AA_Sente/NJcFEAAAQBAJ?hl=pt-BR&gbpv=1">Não acredite em tudo que você sente</blockquote> <!--usado para citar o livro e ajudar o algoritmos do navegador-->
+    <h2>Abreviações</h2>
+        <p><abbr title="National Aeronautics and Space Administration">NASA</abbr></p> <!--colocar o mouse em cima mostra o que a palavra dentro do abbir significa-->
+    <h2>Inverter texto</h2>
+        <p><bdo dir="rtl">IN-VER-TI-DO-?</bdo></p> <!--inverter texto-->
+    <h2>Listas</h2>
+    <h3>Ordenadas</h3>
+    <ol type="A"> <!--listas ordenadas--> <!--type=muda o prefixo-->
+        <li>Acordar</li> <!--linha-->
+        <li>Estudar</li>
+        <li>Jogar</li>
+        <li>Assistir</li>
+    </ol>
+    <h3>Não Ordenadas</h3>
+    <ul type="square"> <!--Listas não ordenadas-->
+        <li>Acordar</li>
+        <li>Estudar</li>
+        <li>Jogar</li>
+        <li>Assistir</li>
+    </ul>
+    <h3>Listas de Definições</h3>
+        <dl> <!--começar lista-->
+            <dt>Semântica</dt> <!--paravra para definição-->
+            <dd>Semântica é um ramo da linguística que estuda o significado das palavras, frases e textos de uma língua. A semântica está dividida em: descritiva ou sincrônica – a que estuda o sentido atual das palavras e em histórica ou diacrônica - a que estuda as mudanças que as palavras sofreram no tempo e no espaço.</dd> <!--definição-->
+        </dl>
+    <h2>Links</h2>
+</body>
+</html>
